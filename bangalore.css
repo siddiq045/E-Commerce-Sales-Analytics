@@ -1,0 +1,163 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== BODY ===== */
+body.bdy {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+              url("./images/bangulore.jpg") no-repeat center center / cover;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: rgba(13, 110, 253, 0.9);
+  color: white;
+}
+
+.navbar .logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.navbar nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  flex: 1;
+  padding: 40px 60px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===== CARD & CHARTS SECTION ===== */
+.sec {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  flex: 1;
+  min-height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  background: rgba(13, 110, 253, 0.9);
+  color: white;
+  margin-top: auto;
+}
+
+footer a {
+  color: brown;
+  text-decoration: none;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Large Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 30px 40px;
+  }
+
+  .sec {
+    gap: 15px;
+  }
+
+  .card {
+    min-height: 280px;
+  }
+}
+
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .navbar nav a {
+    margin: 8px;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .sec {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+/* Mobiles (≤480px) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar .logo {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 15px;
+  }
+
+  .card {
+    min-height: 250px;
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 12px;
+  }
+}
